@@ -1,0 +1,43 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Virtual Environments
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node & Frontend Build Artifacts
+node_modules/
+dist/
+build/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Databases & Runtime State
+*.db
+*.sqlite3
+*.sqlite
+finpilot.db
+context.db
+
+# Test Outputs & Scratch
+test2_test4_results.json
+test_guardrail_results.json
+scratch/
+
