@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: finpilot-api
+    runtime: docker
+    region: oregon
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3-flash-preview
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:////var/data/finpilot.db
